@@ -7,18 +7,22 @@ import { appRouting } from './app.routes';
 import { LoginComponent } from './components/login/login.component';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PrincipalComponent } from './components/principal/principal.component';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
-    LoginComponent
+    LoginComponent,
+    PrincipalComponent
   ],
   imports: [
     BrowserModule,
     appRouting,
     SweetAlert2Module,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
