@@ -1,0 +1,38 @@
+<div class="signUp">
+    <div id="return">
+        <button type="button" routerLink="/login" class="btn btn-info btn-lg btn-block">To return</button>
+    </div>
+    <div class="row">
+        <div id="registro" class="card">
+            <img id="imgUser" class="card-img-top" src="../assets/img/user.png" alt="Card image cap">
+            <h2 class="card-title text-center">REGISTRE</h2>
+
+            <div [formGroup]="formulario" class="card-body">
+
+                <div class="form-group text-center">
+                    <label for="">Name</label>
+                    <input type="text" formControlName="name" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group text-center">
+                    <label for="">Last Name</label>
+                    <input type="text" formControlName="lastname" class="form-control" placeholder="Last Name">
+                </div>
+                <div class="form-group text-center">
+                    <label for="">Email</label>
+                    <input type="email" formControlName="email" class="form-control" placeholder="Email Address">
+                </div>
+                <div class="form-group text-center">
+                    <label for="">Password</label>
+                    <input type="password" formControlName="pass" class="form-control" placeholder="Enter Password">
+                </div>
+                <div class="form-group text-center">
+                    <label for="">Repeat password</label>
+                    <input type="password" formControlName="pass2" class="form-control" placeholder="Enter Password">
+                </div>
+                <div>
+                    <button type="button" id="fin" (click)="registroTerminado()" class="btn btn-light btn-lg btn-block">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

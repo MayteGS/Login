@@ -1,0 +1,36 @@
+.signUp {
+    background-image: url(../../../assets/img/gala.jpg);
+    width: auto;
+    height: 130vh;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+#return {
+    position: absolute;
+    width: 10%;
+    top: 10%;
+    left: 10%;
+}
+
+#registro {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    left: 25%;
+    top: 10%;
+}
+
+#registro img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 40%;
+    border-radius: 50%;
+}
+
+#fin {
+    position: relative;
+    color: rgb(70, 33, 146);
+    border-top: rgb(70, 33, 146);
+}

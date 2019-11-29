@@ -1,0 +1,28 @@
+.login {
+    background-image: url(../../../assets/img/gala.jpg);
+    width: auto;
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+#user {
+    position: absolute;
+    width: 30%;
+    left: 35%;
+    top: 10%;
+}
+
+#user img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 33%;
+    border-radius: 50%;
+}
+
+#sign {
+    position: relative;
+    color: rgb(70, 33, 146);
+    border-top: rgb(70, 33, 146);
+}
