@@ -1,5 +1,6 @@
 .principal {
     width: auto;
     height: 100vh;
-    background: rgb(3, 86, 92);
+    color: white;
+    background-image: url(./../../../assets/img/gala.jpg);
 }

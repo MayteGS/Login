@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
 
   public enviarToken(){
     this.token = new FormGroup({
-      email: new FormControl(null,[Validators.required,Validators.pattern( /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)]),
+      email: new FormControl(null,[Validators.required,Validators.pattern(/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/)]),
       password: new FormControl(null,[Validators.required])
     })
   }
@@ -55,7 +55,7 @@ export class LoginComponent implements OnInit {
 
     
     
-    console.log(this.token.value);
+    console.log(this.token);
     
   }
 
