@@ -1,7 +1,42 @@
-<div class="principal">
+<div id="principal">
+    <div class="text-right">
+        <button type="button" class="btn btn-info btn-md mt-5 mr-5">Add user</button>
+    </div>
 
-    <h2 class="text-center">Pagina Principal</h2>
-    <div>
-        <button type="button" routerLink="/login" class="btn btn-info btn-lg btn-block col-2">Leave</button>
+
+
+    <div class="container">
+        <div class="form-group mt-4">
+            <label for="">Buscar Usuario:</label>
+            <input type="text" name="" id="" class="form-control" placeholder="Buscar usuario por nombre">
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-12 text-center">
+                <div class="card-columns">
+                    <div class="card w-75" *ngFor="let user of UserData">
+                        <img class="card-img-top" [src]="user.avatar" alt="" />
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                {{ user.first_name }} {{ user.last_name }}
+                            </h4>
+                            <p class="card-text">Email: {{ user.email }}</p>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="button" (click)="open(content,true,user.id)" class="btn btn-outline-warning btn-md btn-block">Modificar</button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" (click)="eliminarUsuarios(user.id)" class="btn btn-outline-danger btn-md btn-block">Eliminar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>

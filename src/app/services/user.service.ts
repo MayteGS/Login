@@ -14,6 +14,7 @@ export class UserService {
     return this.http.post(URL,user)
     console.log(user);
   }
+  
 
   
   

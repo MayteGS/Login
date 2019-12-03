@@ -1,6 +1,20 @@
-.principal {
+#principal {
     width: auto;
-    height: 100vh;
+    height: 150vh;
     color: white;
     background-image: url(./../../../assets/img/gala.jpg);
+}
+
+.container {
+    width: 60vw;
+    height: 100vh;
+    left: 20%;
+    position: absolute;
+    background: rgba(31, 129, 129, 0.521);
+}
+
+#alitas {
+    position: absolute;
+    width: 30vw;
+    height: 30vh;
 }
